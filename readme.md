@@ -26,7 +26,10 @@ function handleErrors(next) {
 }
 
 function setCacheControl(next) {
-	return (req, res) => res.setHeader(`Cache-Control`, `public, max-age=` + 3600)
+	return async(req, res) => {
+		res.setHeader(`Cache-Control`, `public, max-age=` + 3600)
+		return next(req, res)
+	}
 }
 ```
 
