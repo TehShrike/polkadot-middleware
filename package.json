@@ -1,6 +1,6 @@
 {
   "name": "polkadot-middleware",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A middleware pattern for polkadot",
   "main": "index.js",
   "scripts": {
